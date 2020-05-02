@@ -21,6 +21,10 @@ jobs:
       with:
         java-version: 13
     - name: Grant execute permission for gradlew
+      env:
+        MONGO_URI: ${{ secret.MONGO_URI }}
+        JWT_EXPIRES: ${{ secret.JWT_EXPIRES }}
+        JWT_SECRET: ${{ secret.JWT_SECRET }}
       run: cd api/ && chmod +x gradlew
     - name: Build with Gradle
       run: cd api/ && ./gradlew build
