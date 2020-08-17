@@ -15,7 +15,7 @@ to install it for your respective OS.
 Here are a couple tips to get you up and running quickly!
 
 ```bash
-git clone https://github.com/grant-williams/uh-sdp-pet-app.git
+git clone https://github.com/FaSidd/uh-sdp-pet-app.git
 cd uh-sdp-pet-app
 ```
 
